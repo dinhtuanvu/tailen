@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ASSIGNMENTDataSet" targetNamespace="http://tempuri.org/ASSIGNMENTDataSet.xsd" xmlns:mstns="http://tempuri.org/ASSIGNMENTDataSet.xsd" xmlns="http://tempuri.org/ASSIGNMENTDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ASSIGNMENTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ASSIGNMENTConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.assignment.My.MySettings.GlobalReference.Default.ASSIGNMENTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Bang_san_phamTableAdapter" GeneratorDataComponentClassName="Bang_san_phamTableAdapter" Name="Bang_san_pham" UserDataComponentName="Bang_san_phamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ASSIGNMENTConnectionString (MySettings)" DbObjectName="ASSIGNMENT.dbo.Bang_san_pham" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Ten_san_pham FROM dbo.Bang_san_pham</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ten_san_pham" DataSetColumn="Ten_san_pham" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ASSIGNMENTDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ASSIGNMENTDataSet" msprop:Generator_UserDSName="ASSIGNMENTDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bang_san_pham" msprop:Generator_TableClassName="Bang_san_phamDataTable" msprop:Generator_TableVarName="tableBang_san_pham" msprop:Generator_TablePropName="Bang_san_pham" msprop:Generator_RowDeletingName="Bang_san_phamRowDeleting" msprop:Generator_RowChangingName="Bang_san_phamRowChanging" msprop:Generator_RowEvHandlerName="Bang_san_phamRowChangeEventHandler" msprop:Generator_RowDeletedName="Bang_san_phamRowDeleted" msprop:Generator_UserTableName="Bang_san_pham" msprop:Generator_RowChangedName="Bang_san_phamRowChanged" msprop:Generator_RowEvArgName="Bang_san_phamRowChangeEvent" msprop:Generator_RowClassName="Bang_san_phamRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ten_san_pham" msprop:Generator_ColumnVarNameInTable="columnTen_san_pham" msprop:Generator_ColumnPropNameInRow="Ten_san_pham" msprop:Generator_ColumnPropNameInTable="Ten_san_phamColumn" msprop:Generator_UserColumnName="Ten_san_pham">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
